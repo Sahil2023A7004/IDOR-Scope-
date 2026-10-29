@@ -1,8 +1,11 @@
 import json
 
-white_list = ["api", "graphql", "v1", "v2", "v3", "user", "profile", "account", "settings", "me", "dashboard", "wallet",
-              "update", "edit", "delete", "create", "upload", "download", "payment",
-               "id=", "uid=", "user_id="]
+white_list = [
+    "/api/", "/graphql", "/v1/", "/v2/", "/v3/",
+    "/user", "/profile", "/account", "/settings", "/me/", "/dashboard", "/wallet",
+    "/update", "/edit", "/delete", "/create", "/upload", "/download", "/payment",
+    "id=", "uid=", "user_id="
+]
 
 def load(path):
     with open(path, "r", encoding="utf-8") as f:
